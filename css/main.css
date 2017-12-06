@@ -9440,6 +9440,12 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 576px) {
+  .call-to-actions {
+    background: url(../img/deck.jpg) center center scroll;
+  }
+}
+
 .call-to-actions .panel {
   background: #fff;
   color: #565656;
