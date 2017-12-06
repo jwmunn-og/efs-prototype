@@ -222,12 +222,12 @@ a.rounded-arrow {
   bottom: 0;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  background: #e4f1fd;
+  background: #76323F;
   margin: 0;
   border-radius: 4px;
 }
 .with-overlay:hover .with-overlay__content {
-  opacity: 1;
+  opacity: .95;
 }
 .socials,
 .socials-lg {
@@ -9279,4 +9279,98 @@ h5 {
 
 .puzzle-tabs {
   padding-left: 0px !important;
+}
+
+/* --- Colors --- */
+body {
+  background: #D7CEC7;
+}
+
+.headers {
+  background: #fff;
+}
+
+/* --- Images --- */
+.phases {
+  color: #fff;
+}
+
+#phase-1 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/baby.jpg);
+}
+
+#phase-2 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/airplane.jpg);
+}
+
+#phase-3 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/dignity.jpg);
+}
+
+#phase-4 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/save.jpg);
+}
+
+#phase-5 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/kids.jpg);
+}
+
+#phase-6 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/child.jpg);
+}
+
+#phase-7 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/career.jpg);
+}
+
+#phase-8 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/graduate.jpg);
+}
+
+#phase-9 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/retire.jpg);
+}
+
+#phase-10 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/legacy.jpg);
+}
+
+#phase-11 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/travel.jpg);
+}
+
+#phase-12 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/parent-child.jpg);
+}
+
+#phase-13 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/singularity.jpg);
+}
+
+#phase-14 {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0) 50%),
+              url(../img/phases/world.jpg);
+}
+
+#phase-1, #phase-2,
+#phase-3, #phase-4,
+#phase-5, #phase-6,
+#phase-7, #phase-8,
+#phase-9, #phase-10,
+#phase-11, #phase-12,
+#phase-13, #phase-14 {
+  background-size: cover;
 }
