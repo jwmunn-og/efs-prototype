@@ -213,23 +213,23 @@ a.rounded-arrow {
   padding-left: 15px;
   padding-right: 15px;
 }
-.with-overlay__content {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-  background: #76323F;
-  margin: 0;
-  border-radius: 4px;
-}
-.with-overlay:hover .with-overlay__content {
-  opacity: .95;
-}
 .socials,
+  .with-overlay__content {
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    background: #76323F;
+    margin: 0;
+    border-radius: 4px;
+  }
+  .with-overlay:hover .with-overlay__content {
+    opacity: .97;
+  }
 .socials-lg {
   font-size: 0;
   margin: 0 -12px;
@@ -464,13 +464,20 @@ body {
   font-size: 16px;
   line-height: 25px;
   color: #297fca;
-  font-family: "Roboto", "Helvetica", arial, sans-serif;
+  /* font-family: "Roboto", "Helvetica", arial, sans-serif; */
+  font-family: "PT Sans", "Helvetica", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+h1, .call-to-actions h2 {
+  font-family: "Merriweather", Times, Georgia, serif;
+  color: #76323F;
+}
+
 hr {
   border: none;
   width: 100%;
@@ -9373,4 +9380,83 @@ body {
 #phase-11, #phase-12,
 #phase-13, #phase-14 {
   background-size: cover;
+}
+
+.phases .btn, #puzzle .btn {
+  background: #fff;
+  color: #76323F;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.phases .btn:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#puzzle .btn {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+}
+
+#puzzle .btn:hover {
+  background: #fff;
+  color: #76323F;
+}
+
+#puzzle {
+  /* background: url(../img/phases/puzzle2.jpg) fixed center center;
+  background-size: cover;
+  color: #fff; */
+  /* background: #fff; */
+  color: #565656;
+}
+
+#puzzle .panel {
+  background: linear-gradient( to top, rgba(0,0,0,.75), rgba(0, 0, 0, 0.15) 50%),
+  url(../img/antelope.jpg) fixed center center;
+  background-size: cover;
+  color: #fff;
+}
+
+#puzzle a, #puzzle h1 {
+  color: #76323F;
+}
+
+.navbar .btn, .call-to-actions .btn {
+  background: #76323F;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.navbar .btn:hover, .call-to-actions .btn:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.call-to-actions {
+  background: url(../img/deck.jpg) center center fixed;
+  background-size: cover;
+}
+
+.call-to-actions .panel {
+  background: #fff;
+  color: #565656;
+}
+
+.quote {
+  background: #76323F;
+}
+
+.quote h1, .call-to-actions h1 {
+  color: #fff;
+}
+
+.quote h4 {
+  color: rgba(255, 255, 255, .75);
+}
+
+.footers {
+  background: #D7CEC7;
 }
