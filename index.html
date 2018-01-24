@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Platforma Template</title>
+  <title>Edelman Financial Services</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -28,20 +28,29 @@
           </a>
         </div>
         <div class="col-auto">
-          <nav class="navbar d-none d-lg-block">
+          <nav class="navbar">
             <!-- <a href="">Menu one</a>
             <a href="">Menu two</a>
             <a href="">Menu three</a> -->
-            <a href="">
+
+            <!-- <a href="">
               <img src="img/icons/burger.svg">
             </a>
-            <a class="btn btn-small">Talk with an Advisor</a>
-          </nav>
-          <nav class="navbar d-lg-none">
-            <a href="">
-              <img src="img/icons/burger.svg">
-            </a>
-            <a class="btn btn-small d-none d-sm-inline-block">Button</a>
+            <a class="btn btn-small">Talk with an Advisor</a> -->
+            <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+            <a class="btn btn-small d-none d-lg-block">Talk with an Advisor</a>
+            <div class="overlay" id="overlay">
+              <nav class="overlay-menu">
+                <ul>
+                  <li><a href="#">Financial Planning</a></li>
+                  <li><a href="#">Attend a Workshop</a></li>
+                  <li><a href="#">Schedule a Call</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Client Only</a></li>
+                </ul>
+              </nav>
+            </div>
           </nav>
         </div>
       </div>
@@ -712,6 +721,12 @@
     <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
   </div>
   <script src="js/remodal.min.js"></script>
+  <script>
+    $('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+    });
+  </script>
 </body>
 
 </html>
