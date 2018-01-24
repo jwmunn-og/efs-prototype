@@ -9424,7 +9424,7 @@ body {
   color: #76323f;
 }
 
-#puzzle {
+.grey-text {
   /* background: url(../img/phases/puzzle2.jpg) fixed center center;
   background-size: cover;
   color: #fff; */
@@ -9503,4 +9503,8 @@ body {
 
 .footers {
   background: #d7cec7;
+}
+
+.red-text, .call-to-actions .red-text {
+  color: #76323f;
 }
